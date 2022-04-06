@@ -1,0 +1,49 @@
+.header{
+    background: url('./../../../public/HeaderBlock.png') 0 0/auto 100% no-repeat;
+    /*background: url('./../../../public/HeaderBlock.png') no-repeat 0 0 fixed;*/
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
+    display: flex;
+    justify-content: center;
+}
+.header__row{
+    height: 100px;
+    width: 1169px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*@media all and (min-width: 1169px) {*/
+/*.header__row{*/
+/*  */
+/*}*/
+/*}*/
+
+.header__logo{
+    display: flex;
+    flex-direction: row;
+}
+
+.header__navbar{
+    /*flex: 0 1 33.33%;*/
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /*border: 1px solid red;*/
+    /*align-items: center;*/
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+}
+.navbar__item{
+    white-space: nowrap;
+    margin-right: 40px;
+}
+
+.navbar__item:last-child{
+    margin-right: 0;
+}

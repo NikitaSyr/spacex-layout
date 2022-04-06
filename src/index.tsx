@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './fonts/Museo/ofont.ru_Museo Sans Cyrl 100.ttf';
+import './fonts/Museo/ofont.ru_Museo Sans Cyrl 300.ttf';
+import './fonts/Museo/ofont.ru_Museo Sans Cyrl 700.ttf';
 
 ReactDOM.render(
   <React.StrictMode>
