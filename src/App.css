@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 /*_________________________*/
 
 .app{
-  background: url('./../public/MainBackground.png') no-repeat center center fixed;;
+  background: url('./../public/MainBackground.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
   /*background-color: #CFCFCF;*/
   color: #fff;
   font-size: 16px;
-  /*line-height: 1.4;*/
+  line-height: 22px;
 }
 
 .app__wrapper{

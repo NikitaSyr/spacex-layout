@@ -27,6 +27,14 @@
     flex-direction: row;
 }
 
+.header__logo img:hover{
+    background: url("./../../../public/SpaceXLogoHover.png") 3px 2px no-repeat;
+}
+
+.logo__active{
+    background: url("./../../../public/NavbarActive.png") no-repeat;
+}
+
 .header__navbar{
     /*flex: 0 1 33.33%;*/
     display: flex;
@@ -40,10 +48,30 @@
     flex-direction: row;
 }
 .navbar__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
     white-space: nowrap;
     margin-right: 40px;
+    margin-left: 5px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "Museo300", sans-serif;
+}
+
+.navbar__item:hover{
+    color: #b1b1b1;
+    background: url("./../../../public/NavbarHover.png") 0 45px no-repeat;
 }
 
 .navbar__item:last-child{
-    margin-right: 0;
+    margin-right: 5px;
+}
+
+.navbar__active{
+    color: #b1b1b1;
+    background: url("./../../../public/NavbarHover.png") 0 45px no-repeat;
+    font-weight: 700;
 }

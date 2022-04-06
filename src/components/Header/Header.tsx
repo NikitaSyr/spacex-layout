@@ -6,21 +6,31 @@ import SpaceXLogo from "./../../../src/assets/img/SpaceXLogo.png"
 
 
 const Header = () => {
-
+    const classIsActiveReturner = (isActive: boolean) => {
+        return isActive ? `${s.navbar__item} ${s.navbar__active}` : s.navbar__item
+    }
     return (
         <header className={s.header}>
             <div className={s.header__row}>
                 <div className={s.header__logo}>
-                    <img src={SpaceXLogo} alt=""/>
+                    <NavLink to={"/"} className={({isActive}) => {
+                        return isActive ? `${s.logo__active}` : ""}}><img src={SpaceXLogo} alt=""/></NavLink>
                 </div>
                 <div className={s.header__navbar}>
                     <div className={s.navbar}>
-                        <NavLink to={"main"} className={s.navbar__item}>Главная</NavLink>
-                        <NavLink to={"technology"} className={s.navbar__item}>Технология</NavLink>
-                        <NavLink to={"schedule"} className={s.navbar__item}>График полетов</NavLink>
-                        <NavLink to={"warranty"} className={s.navbar__item}>Гарантии</NavLink>
-                        <NavLink to={"about"} className={s.navbar__item}>О компании</NavLink>
-                        <NavLink to={"contacts"} className={s.navbar__item}>Контакты</NavLink>
+
+                        <NavLink to={"main"} className={({isActive}) => {
+                            return classIsActiveReturner(isActive);}}>Главная</NavLink>
+                        <NavLink to={"technology"} className={({isActive}) => {
+                            return classIsActiveReturner(isActive);}}>Технология</NavLink>
+                        <NavLink to={"schedule"} className={({isActive}) => {
+                            return classIsActiveReturner(isActive);}}>График полетов</NavLink>
+                        <NavLink to={"warranty"} className={({isActive}) => {
+                            return classIsActiveReturner(isActive);}}>Гарантии</NavLink>
+                        <NavLink to={"about"} className={({isActive}) => {
+                            return classIsActiveReturner(isActive);}}>О компании</NavLink>
+                        <NavLink to={"contacts"} className={({isActive}) => {
+                            return classIsActiveReturner(isActive);}}>Контакты</NavLink>
                     </div>
                 </div>
                 {/*<div className={s.header__column}>*/}
