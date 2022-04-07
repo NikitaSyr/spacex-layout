@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import {HashRouter, Routes, Route} from 'react-router-dom';
 import Header from "./components/Header/Header";
+import Landing from "./components/Landing/Landing";
 
 function App() {
     return (
@@ -18,7 +19,7 @@ function App() {
                                 <Route path="/warranty" element={<div className={"load__plug"}>Гарантии</div>}/>
                                 <Route path="/about" element={<div className={"load__plug"}>О компании</div>}/>
                                 <Route path="/contacts" element={<div className={"load__plug"}>Контакты</div>}/>
-                                <Route path="/" element={<div>SpaceX</div>}/>
+                                <Route path="/" element={<Landing/>}/>
                                 <Route path="*" element={<div>404 PAGE NOT FOUND</div>}/>
                             </Routes>
                         </div>
