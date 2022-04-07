@@ -1,13 +1,7 @@
 .landing {
-    /*height: 100%;*/
     width: 100%;
     display: flex;
     flex: 1 1 auto;
-    /*flex-direction: column;*/
-    /*align-items: center;*/
-    /*margin: 0 auto;*/
-    /*border: 1px solid red;*/
-
 }
 
 .landing__background {
@@ -36,20 +30,11 @@
     }
 }
 
-/*@media all and (min-width: 2700px) {*/
-/*    .landing__background {*/
-/*        background-image: none;*/
-/*    }*/
-/*}*/
-
-
 .landing__heading {
     display: flex;
     align-items: flex-end;
     flex: 1 1 auto;
-    /*border: 1px solid red;*/
     justify-content: center;
-    /*margin-left: 10%;*/
 }
 
 .heading__text {
@@ -71,43 +56,31 @@
 .landing__startTravel {
     display: flex;
     flex: 0 0 40%;
-    /*flex-direction: row;*/
-    /*justify-content: flex-start;*/
-    /*border: 1px solid red;*/
 }
 
-
 .startTravel__button {
-    /*min-width: 180px;*/
-    /*height: 35px;*/
     margin-top: 50px;
-    /*border: 1px solid red;*/
 }
 
 .startTravel__button:hover {
     background: url("./../../../public/StartButtonHover.png") no-repeat;
-    /*border: 1px solid red;*/
 }
 
 .text__travel {
     text-transform: uppercase;
     font-size: 58px;
     font-family: "Museo700", sans-serif;
-
 }
 
 .text__redPlanet {
     font-size: 25px;
     font-family: "Museo300", sans-serif;
-
 }
 
 .landing__column {
     display: flex;
     flex-direction: column;
     flex: 0 0 50%;
-    /*max-width: 585px;*/
-    /*align-items: flex-start;*/
 }
 
 .landing__UpperRow {
@@ -117,7 +90,6 @@
     height: 250px;
     justify-content: center;
     align-items: flex-end;
-    /*border: 1px solid red;*/
 }
 
 .landing__LowerRow {
@@ -127,7 +99,6 @@
     justify-content: center;
     align-items: flex-start;
     height: 150px;
-
 }
 
 @media all and (max-width: 600px) {
@@ -215,16 +186,20 @@
         font-size: 44px;
 
     }
+
     .text__redPlanet {
         font-size: 22px;
     }
+
     .item__middleText {
         font-size: 50px;
     }
+
     .benefits__box {
         width: 165px;
         height: 165px;
     }
+
     .box__item {
         height: 165px;
     }
@@ -235,19 +210,24 @@
         font-size: 35px;
 
     }
+
     .text__redPlanet {
         font-size: 18px;
     }
+
     .item__middleText {
         font-size: 35px;
     }
+
     .benefits__box {
         width: 135px;
         height: 135px;
     }
+
     .box__item {
         height: 135px;
     }
+
     .landing__benefits {
         margin-left: 5%;
     }
@@ -256,47 +236,56 @@
 @media all and (max-width: 570px) {
     .text__travel {
         font-size: 32px;
-
     }
+
     .text__redPlanet {
         font-size: 16px;
     }
+
     .item__middleText {
         font-size: 32px;
     }
+
     .benefits__box {
         width: 125px;
         height: 125px;
     }
+
     .box__item {
         height: 125px;
     }
+
     .landing__benefits {
         margin-left: 0;
     }
 }
 
 @media all and (max-width: 530px) {
-    .landing{
+    .landing {
         flex-direction: column;
     }
+
     .landing__column {
         flex: 0 1 10%;
     }
+
     .text__travel {
         font-size: 44px;
-
     }
+
     .text__redPlanet {
         font-size: 22px;
     }
+
     .item__middleText {
         font-size: 50px;
     }
+
     .benefits__box {
         width: 165px;
         height: 165px;
     }
+
     .box__item {
         height: 165px;
     }

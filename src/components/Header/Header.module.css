@@ -1,5 +1,5 @@
 .header {
-    background: url('./../../../public/HeaderBlock.png') 0 0/auto 300% no-repeat;
+    background: url('./../../../public/HeaderBlock.png') 0 0/100% 300% no-repeat;
     display: flex;
     justify-content: center;
 }
