@@ -1,5 +1,5 @@
 .header{
-    background: url('./../../../public/HeaderBlock.png') 0 0/auto 100% no-repeat;
+    background: url('./../../../public/HeaderBlock.png') 0 0/auto 300% no-repeat;
     /*background: url('./../../../public/HeaderBlock.png') no-repeat 0 0 fixed;*/
     /*-webkit-background-size: cover;*/
     /*-moz-background-size: cover;*/
@@ -38,7 +38,7 @@
 .header__navbar{
     /*flex: 0 1 33.33%;*/
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     /*border: 1px solid red;*/
     /*align-items: center;*/
