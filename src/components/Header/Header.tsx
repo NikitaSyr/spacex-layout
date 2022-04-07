@@ -7,18 +7,17 @@ import SpaceXLogo from "./../../../src/assets/img/SpaceXLogo.png"
 
 const Header = () => {
     const classIsActiveReturner = (isActive: boolean) => {
-        return isActive ? `${s.navbar__item} ${s.navbar__active}` : s.navbar__item
+        return isActive ? `${s.navbar__item} ${s.navbar__active}` : `${s.navbar__item}`
     }
     return (
         <header className={s.header}>
             <div className={s.header__row}>
                 <div className={s.header__logo}>
                     <NavLink to={"/"} className={({isActive}) => {
-                        return isActive ? `${s.logo__active}` : ""}}><img src={SpaceXLogo} alt=""/></NavLink>
+                        return isActive ? `${s.logo__active}` : ""}}><img className={s.logo__mobile} src={SpaceXLogo} alt=""/></NavLink>
                 </div>
                 <div className={s.header__navbar}>
                     <div className={s.navbar}>
-
                         <NavLink to={"main"} className={({isActive}) => {
                             return classIsActiveReturner(isActive);}}>Главная</NavLink>
                         <NavLink to={"technology"} className={({isActive}) => {

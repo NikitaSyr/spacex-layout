@@ -1,14 +1,10 @@
-.header{
+.header {
     background: url('./../../../public/HeaderBlock.png') 0 0/auto 300% no-repeat;
-    /*background: url('./../../../public/HeaderBlock.png') no-repeat 0 0 fixed;*/
-    /*-webkit-background-size: cover;*/
-    /*-moz-background-size: cover;*/
-    /*-o-background-size: cover;*/
-    /*background-size: cover;*/
     display: flex;
     justify-content: center;
 }
-.header__row{
+
+.header__row {
     height: 100px;
     width: 1169px;
     display: flex;
@@ -16,62 +12,181 @@
     justify-content: space-between;
 }
 
-/*@media all and (min-width: 1169px) {*/
-/*.header__row{*/
-/*  */
-/*}*/
-/*}*/
-
-.header__logo{
+.header__logo {
     display: flex;
     flex-direction: row;
 }
 
-.header__logo img:hover{
-    background: url("./../../../public/SpaceXLogoHover.png") 3px 2px no-repeat;
+@media all and (min-width: 633px) {
+    .header__logo img:hover {
+        background: url("./../../../public/SpaceXLogoHover.png") 3px 2px no-repeat;
+    }
+
+    .logo__active {
+        background: url("./../../../public/NavbarActive.png") no-repeat;
+    }
 }
 
-.logo__active{
-    background: url("./../../../public/NavbarActive.png") no-repeat;
-}
 
-.header__navbar{
-    /*flex: 0 1 33.33%;*/
+.header__navbar {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /*border: 1px solid red;*/
-    /*align-items: center;*/
 }
-.navbar{
+
+.navbar {
     display: flex;
     flex-direction: row;
 }
-.navbar__item{
+
+.navbar__item {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50px;
     white-space: nowrap;
-    margin-right: 40px;
-    margin-left: 5px;
+    margin-right: 35px;
+    margin-left: 10px;
     color: #fff;
     font-size: 16px;
     line-height: 22px;
     font-family: "Museo300", sans-serif;
 }
 
-.navbar__item:hover{
+.navbar__item:hover {
     color: #b1b1b1;
-    background: url("./../../../public/NavbarHover.png") 0 45px no-repeat;
+    background-image: url("./../../../public/NavbarHover.png");
+    background-repeat: no-repeat;
+    background-position: 0 45px;
 }
 
-.navbar__item:last-child{
-    margin-right: 5px;
+.navbar__item:last-child {
+    margin-right: 10px;
 }
 
-.navbar__active{
+.navbar__active {
     color: #b1b1b1;
-    background: url("./../../../public/NavbarHover.png") 0 45px no-repeat;
+    background-image: url("./../../../public/NavbarHover.png");
+    background-repeat: no-repeat;
+    background-position: 0 45px;
     font-weight: 700;
+}
+
+@media all and (max-width: 1050px) {
+    .navbar__item {
+        margin-right: 25px;
+        margin-left: 5px;
+    }
+
+    .navbar__item:last-child {
+        margin-right: 5px;
+    }
+}
+
+@media all and (max-width: 970px) {
+    .navbar__item {
+        margin-right: 10px;
+        margin-left: 4px;
+    }
+
+    .navbar__item:last-child {
+        margin-right: 4px;
+    }
+}
+
+@media all and (max-width: 888px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+    }
+
+    .navbar__item:nth-child(1) {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .navbar__item:nth-child(2) {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .navbar__item:nth-child(3) {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+
+    .navbar__item:nth-child(4) {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .navbar__item:nth-child(5) {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .navbar__item:nth-child(6) {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+}
+
+@media all and (max-width: 633px) {
+    .header__row {
+        height: 80px;
+    }
+
+    .logo__mobile {
+        height: 80px;
+    }
+
+    .navbar__item {
+        height: 40px;
+        margin-right: 10px;
+        margin-left: 3px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .navbar__item:last-child {
+        margin-right: 3px;
+    }
+}
+
+@media all and (max-width: 530px) {
+    .header__row {
+        height: 60px;
+    }
+
+    .logo__mobile {
+        height: 60px;
+    }
+
+    .navbar__item {
+        height: 30px;
+        margin-right: 5px;
+        margin-left: 2px;
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .navbar__item:last-child {
+        margin-right: 2px;
+    }
+}
+
+@media all and (max-width: 440px) {
+    .header__logo {
+        margin: auto auto auto 1%;
+    }
+
+    .logo__mobile {
+        height: 40px;
+
+    }
+}
+
+@media all and (max-width: 385px) {
+    .logo__mobile {
+        height: 30px;
+
+    }
 }
