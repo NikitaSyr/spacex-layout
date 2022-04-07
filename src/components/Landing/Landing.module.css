@@ -148,7 +148,6 @@
     width: 185px;
     height: 185px;
     margin: 5px;
-    /*flex: 1 1 auto;*/
 }
 
 .box__topLeft {
@@ -209,4 +208,96 @@
 
 .item__bottomText {
     flex: 1 1 25%;
+}
+
+@media all and (max-width: 888px) {
+    .text__travel {
+        font-size: 44px;
+
+    }
+    .text__redPlanet {
+        font-size: 22px;
+    }
+    .item__middleText {
+        font-size: 50px;
+    }
+    .benefits__box {
+        width: 165px;
+        height: 165px;
+    }
+    .box__item {
+        height: 165px;
+    }
+}
+
+@media all and (max-width: 680px) {
+    .text__travel {
+        font-size: 35px;
+
+    }
+    .text__redPlanet {
+        font-size: 18px;
+    }
+    .item__middleText {
+        font-size: 35px;
+    }
+    .benefits__box {
+        width: 135px;
+        height: 135px;
+    }
+    .box__item {
+        height: 135px;
+    }
+    .landing__benefits {
+        margin-left: 5%;
+    }
+}
+
+@media all and (max-width: 570px) {
+    .text__travel {
+        font-size: 32px;
+
+    }
+    .text__redPlanet {
+        font-size: 16px;
+    }
+    .item__middleText {
+        font-size: 32px;
+    }
+    .benefits__box {
+        width: 125px;
+        height: 125px;
+    }
+    .box__item {
+        height: 125px;
+    }
+    .landing__benefits {
+        margin-left: 0;
+    }
+}
+
+@media all and (max-width: 530px) {
+    .landing{
+        flex-direction: column;
+    }
+    .landing__column {
+        flex: 0 1 10%;
+    }
+    .text__travel {
+        font-size: 44px;
+
+    }
+    .text__redPlanet {
+        font-size: 22px;
+    }
+    .item__middleText {
+        font-size: 50px;
+    }
+    .benefits__box {
+        width: 165px;
+        height: 165px;
+    }
+    .box__item {
+        height: 165px;
+    }
 }
