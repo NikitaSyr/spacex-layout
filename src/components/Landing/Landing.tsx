@@ -1,6 +1,5 @@
 import React from "react";
 import s from "./Landing.module.css";
-// import TravelTextMain from "./../../assets/img/TravelTextMain.png";
 import TravelButton from "./../../assets/img/StartButton.png";
 import {NavLink} from "react-router-dom";
 
