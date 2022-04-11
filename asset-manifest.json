@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/spacex-layout/static/css/main.9518bdf1.css",
+    "main.css": "/spacex-layout/static/css/main.1eacd9f2.css",
     "main.js": "/spacex-layout/static/js/main.0ad43b51.js",
     "static/js/787.ed950c50.chunk.js": "/spacex-layout/static/js/787.ed950c50.chunk.js",
     "static/media/MainBackgroundWithText.png": "/spacex-layout/static/media/MainBackgroundWithText.ae2f16e68bde2713ec8e.png",
@@ -9,12 +9,12 @@
     "static/media/ofont.ru_Museo Sans Cyrl 100.ttf": "/spacex-layout/static/media/ofont.ru_Museo Sans Cyrl 100.4670fd6143f301cdaa91.ttf",
     "static/media/ofont.ru_Museo Sans Cyrl 700.ttf": "/spacex-layout/static/media/ofont.ru_Museo Sans Cyrl 700.4e63f06b4aa58983885e.ttf",
     "index.html": "/spacex-layout/index.html",
-    "main.9518bdf1.css.map": "/spacex-layout/static/css/main.9518bdf1.css.map",
+    "main.1eacd9f2.css.map": "/spacex-layout/static/css/main.1eacd9f2.css.map",
     "main.0ad43b51.js.map": "/spacex-layout/static/js/main.0ad43b51.js.map",
     "787.ed950c50.chunk.js.map": "/spacex-layout/static/js/787.ed950c50.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9518bdf1.css",
+    "static/css/main.1eacd9f2.css",
     "static/js/main.0ad43b51.js"
   ]
 }
