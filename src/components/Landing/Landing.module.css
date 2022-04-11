@@ -42,10 +42,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background: linear-gradient(45deg, #fff 33%, #ffac93 50%, #ff460d);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 @media all and (min-width: 1170px) and (max-height: 949px) {
@@ -68,16 +64,18 @@
 }
 
 .text__travel {
+    background: linear-gradient(90deg, #fff 33%, #ffac93 50%, #ff460d);
     -webkit-background-clip: text;
-    background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     font-size: 58px;
     font-family: "Museo700", sans-serif;
 }
 
 .text__redPlanet {
+    background: linear-gradient(90deg, #fff 33%, #ffac93);
     -webkit-background-clip: text;
-    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 25px;
     font-family: "Museo300", sans-serif;
 }
@@ -110,10 +108,6 @@
 }
 
 .landing__benefits {
-    background: linear-gradient(45deg, #fff 0%, #fff 33%, #b1b1b1 66%, #000);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     flex: 1 1 auto;
     display: flex;
     align-items: center;
@@ -169,28 +163,44 @@
 }
 
 .item__topText {
-    -webkit-background-clip: text;
-    background-clip: text;
     flex: 1 1 25%;
     padding-top: 15px;
 }
 
 .item__middleText {
-    -webkit-background-clip: text;
-    background-clip: text;
     flex: 1 1 auto;
+    display: flex;
+    align-items: center;
     font-size: 60px;
+    min-height: 60px;
     font-family: "Museo700", sans-serif;
+
 }
 
 .item__middleTextSmall {
-    -webkit-background-clip: text;
-    background-clip: text;
+    min-height: 51px;
     font-size: 20px;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(90deg, #DADADA, #DADADA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .item__bottomText {
     flex: 1 1 25%;
+}
+
+.item__leftGradient {
+    background: linear-gradient(90deg, #fff , #fff 66% , #b1b1b1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.item__rightGradient{
+    background: linear-gradient(90deg, #DEDEDE, #DEDEDE 66%, #7C7C7C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @media all and (max-width: 888px) {

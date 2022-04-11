@@ -3,22 +3,7 @@ import s from "./Landing.module.css";
 import TravelButton from "./../../assets/img/StartButton.png";
 import {NavLink} from "react-router-dom";
 
-interface BoxItemType {
-    topText: string
-    middleText: string
-    bottomText: string
-}
-
 const Landing = () => {
-    const BoxItem: React.FC<BoxItemType> = ({topText, middleText, bottomText}) => {
-        return (
-            <div className={s.box__item}>
-                <div className={s.item__topText}>{topText}</div>
-                <div className={s.item__middleText}>{middleText}</div>
-                <div className={s.item__bottomText}>{bottomText}</div>
-            </div>
-        )
-    }
     return (
         <div className={`${s.landing} ${s.landing__background}`}>
             <div className={s.landing__column}>
@@ -44,10 +29,18 @@ const Landing = () => {
                 <div className={s.landing__UpperRow}>
                     <div className={s.landing__benefits}>
                         <div className={`${s.benefits__box} ${s.box__topLeft}`}>
-                            <BoxItem topText={"мы"} middleText={"1"} bottomText={"на рынке"}/>
+                            <div className={s.box__item}>
+                                <div className={`${s.item__topText} ${s.item__leftGradient}`}>мы</div>
+                                <div className={`${s.item__middleText} ${s.item__leftGradient}`}>1</div>
+                                <div className={`${s.item__bottomText} ${s.item__leftGradient}`}>на рынке</div>
+                            </div>
                         </div>
                         <div className={`${s.benefits__box} ${s.box__topRight}`}>
-                            <BoxItem topText={"гарантируем"} middleText={"50%"} bottomText={"безопасность"}/>
+                            <div className={s.box__item}>
+                                <div className={`${s.item__topText} ${s.item__rightGradient}`}>гарантируем</div>
+                                <div className={`${s.item__middleText} ${s.item__rightGradient}`}>50%</div>
+                                <div className={`${s.item__bottomText} ${s.item__rightGradient}`}>безопасность</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -55,15 +48,19 @@ const Landing = () => {
                     <div className={s.landing__benefits}>
                         <div className={`${s.benefits__box} ${s.box__bottomLeft}`}>
                             <div className={s.box__item}>
-                                <div className={s.item__topText}>календарик за</div>
-                                <div className={s.item__middleText}>
+                                <div className={`${s.item__topText} ${s.item__leftGradient}`}>календарик за</div>
+                                <div className={`${s.item__middleText} ${s.item__leftGradient}`}>
                                     <span>2001</span><span className={s.item__middleTextSmall}>г.</span>
                                 </div>
-                                <div className={s.item__bottomText}>в подарок</div>
+                                <div className={`${s.item__bottomText} ${s.item__leftGradient}`}>в подарок</div>
                             </div>
                         </div>
                         <div className={`${s.benefits__box} ${s.box__bottomRight}`}>
-                            <BoxItem topText={"путешествие"} middleText={"597"} bottomText={"дней"}/>
+                            <div className={s.box__item}>
+                                <div className={`${s.item__topText} ${s.item__rightGradient}`}>путешествие</div>
+                                <div className={`${s.item__middleText} ${s.item__rightGradient}`}>597</div>
+                                <div className={`${s.item__bottomText} ${s.item__rightGradient}`}>дней</div>
+                            </div>
                         </div>
                     </div>
                 </div>
