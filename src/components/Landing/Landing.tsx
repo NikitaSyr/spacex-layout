@@ -50,7 +50,7 @@ const Landing = () => {
                             <div className={s.box__item}>
                                 <div className={`${s.item__topText} ${s.item__leftGradient}`}>календарик за</div>
                                 <div className={`${s.item__middleText} ${s.item__leftGradient}`}>
-                                    <span>2001</span><span className={s.item__middleTextSmall}>г.</span>
+                                    2001<span className={s.item__middleTextSmall}>г.</span>
                                 </div>
                                 <div className={`${s.item__bottomText} ${s.item__leftGradient}`}>в подарок</div>
                             </div>
