@@ -44,6 +44,7 @@
     align-items: flex-start;
     background: linear-gradient(45deg, #fff 33%, #ffac93 50%, #ff460d);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -67,12 +68,16 @@
 }
 
 .text__travel {
+    -webkit-background-clip: text;
+    background-clip: text;
     text-transform: uppercase;
     font-size: 58px;
     font-family: "Museo700", sans-serif;
 }
 
 .text__redPlanet {
+    -webkit-background-clip: text;
+    background-clip: text;
     font-size: 25px;
     font-family: "Museo300", sans-serif;
 }
@@ -107,6 +112,7 @@
 .landing__benefits {
     background: linear-gradient(45deg, #fff 0%, #fff 33%, #b1b1b1 66%, #000);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     flex: 1 1 auto;
     display: flex;
@@ -163,17 +169,23 @@
 }
 
 .item__topText {
+    -webkit-background-clip: text;
+    background-clip: text;
     flex: 1 1 25%;
     padding-top: 15px;
 }
 
 .item__middleText {
+    -webkit-background-clip: text;
+    background-clip: text;
     flex: 1 1 auto;
     font-size: 60px;
     font-family: "Museo700", sans-serif;
 }
 
 .item__middleTextSmall {
+    -webkit-background-clip: text;
+    background-clip: text;
     font-size: 20px;
 }
 
